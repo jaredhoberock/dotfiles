@@ -1,3 +1,11 @@
+[username]
+format = '[$user]($style)@' # just use @ instead of in
+style_user = 'green'
+
+[hostname]
+ssh_symbol = '' # don't display the weird earth emoji
+style = 'green dimmed'
+
 [aws]
 symbol = "  "
 
