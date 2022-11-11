@@ -1,3 +1,12 @@
+# display a leading icon indicating which OS we're on
+format = """$env_var$all"""
+
+[env_var.STARSHIP_OS]
+format = '[$env_value]($style) '
+variable = "STARSHIP_OS"
+disabled = false
+style = 'white'
+
 [username]
 format = '[$user]($style)@' # just use @ instead of in
 style_user = 'green'
