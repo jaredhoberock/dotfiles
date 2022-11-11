@@ -8,6 +8,6 @@ style = 'green dimmed'
 
 [git_branch]
 symbol = " "
-format = "[$symbol$branch]($style)"
+format = "[$symbol$branch]($style) " # the trailing whitespace at the end ensures that there is space before "took Xs"
 style = "bright-black"
 
