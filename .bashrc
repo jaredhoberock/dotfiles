@@ -115,25 +115,19 @@ fi
 
 export LOCAL_BIN_PATH=~/.local/bin
 
-export P4_BIN_PATH=~/bin
-export P4_LIB_PATH=~/lib
+export CIRCLE_BIN_PATH=/home/jhoberock/Desktop/circle
 
-export CUDA_BIN_PATH=/usr/local/cuda/bin
-export CUDA_LIB_PATH=/usr/local/cuda/lib64
+export CUDA_PATH=/opt/nvidia/hpc_sdk/Linux_x86_64/2023/cuda/12.0
 
-export NVHPC_BIN_PATH=/opt/nvidia/hpc_sdk/Linux_x86_64/22.7/compilers/bin
-export NVHPC_LIB_PATH=/opt/nvidia/hpc_sdk/Linux_x86_64/22.7/compilers/lib
+export CUDA_BIN_PATH=$CUDA_PATH/bin
+export CUDA_LIB_PATH=$CUDA_PATH/lib64
 
-#export PGI_BIN_PATH=/opt/pgi/linux86-64/2017/bin
-#export PGI_LIB_PATH=/opt/pgi/linux86-64/2017/lib
-export PGI_BASE_PATH=/home/jhoberock/Desktop/pgi/nightly/200430/hpc_sdk/Linux_x86_64/20XX-dev
-export PGI_BIN_PATH=$PGI_BASE_PATH/bin
-export PGI_LIB_PATH=$PGI_BASE_PATH/lib
+export NVHPC_PATH=/opt/nvidia/hpc_sdk/Linux_x86_64/2023
+export NVHPC_BIN_PATH=$NVHPC_PATH/bin
+export NVHPC_LIB_PATH=$NVHPC_PATH/lib
 
-export OPENSHMEM_BIN_PATH=/home/jhoberock/dev/openshmem-root/bin
-
-export PATH=$PATH:$LOCAL_BIN_PATH:$CUDA_BIN_PATH:$P4_BIN_PATH:$PGI_BIN_PATH:$OPENSHMEM_BIN_PATH:$NVHPC_BIN_PATH
-export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$CUDA_LIB_PATH:$P4_LIB_PATH:$PGI_LIB_PATH:$NVHPC_LIB_PATH
+export PATH=$PATH:$LOCAL_BIN_PATH:$CIRCLE_BIN_PATH:$CUDA_BIN_PATH:$NVHPC_BIN_PATH
+export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$CUDA_LIB_PATH:$NVHPC_LIB_PATH
 
 export THRUST_PATH=~/dev/git/thrust-tot
 export AGENCY_PATH=~/dev/git/agency-tot
